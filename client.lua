@@ -403,7 +403,7 @@ Citizen.CreateThread(function()
 	
 	if Config.EnablePeds then
 		for _, item in pairs(Config.Locations) do
-			local npc = CreatePed(4, 0xd47303ac, item.x, item.y, item.z, item.heading, false, true)
+			local npc = CreatePed(4, 0xd47303ac, item.x, item.y, item.z-0.95, item.heading, false, true)
 			
 			SetEntityHeading(npc, item.heading)
 			FreezeEntityPosition(npc, true)
@@ -413,7 +413,7 @@ Citizen.CreateThread(function()
 	end
 	if Config.EnablePeds then
 		for _, item in pairs(Config.illegal) do
-			local npc = CreatePed(4, 0xd47303ac, item.x, item.y, item.z, item.heading, false, true)
+			local npc = CreatePed(4, 0xd47303ac, item.x, item.y, item.z-0.95, item.heading, false, true)
 			
 			SetEntityHeading(npc, item.heading)
 			FreezeEntityPosition(npc, true)
